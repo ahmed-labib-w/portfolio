@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import profileImg from "../assets/avatar.png";
+
+<img src={profileImg} alt="Ahmed Nasser" />;
 
 const Hero = () => {
   return (
@@ -9,7 +12,7 @@ const Hero = () => {
       <div className="flex flex-col items-center justify-center gap-6 text-white">
         {/* pfp */}
         <motion.img
-          src="/public/avatar.png"
+          src={profileImg}
           alt="Ahmed Nasser"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
